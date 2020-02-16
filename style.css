@@ -1,0 +1,28 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#ind1 {
+    font-family: 'Caveat', cursive;
+}
+
+#nav1 {
+    background: whitesmoke;
+}
+
+#cont1 {
+    background: url(img/indo1.jpg);
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#carouselExampleCaptions {
+    margin-top: 75px;
+}
+
+#btn1 {
+    background-color: #2fe1aa;
+    border: none;
+    color: white;
+}
