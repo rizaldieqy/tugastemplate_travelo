@@ -1,122 +1,663 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travelo</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container-fluid" id="cont1">
-        <div class="container-fluid" id="nav1">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <i class='far fa-compass mx-2' style='font-size:36px; color: #ff1493;'></i>
-                <a class="navbar-brand" href="#">Travelo</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-        
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mx-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Destination</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Pages
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Blog
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
-                    </li>
-                  </ul>
-                  <i class='fas fa-phone mx-2' style="color: #ff1493;"><b class="mx-2" style="color: black;">10(256)-928 256</b></i>
-                  <i class='fab fa-instagram mx-2' style='color: #dddddd'></i>
-                  <i class='fab fa-linkedin-in mx-2' style='color: #dddddd'></i>
-                  <i class='fab fa-facebook-f mx-2' style="color: #dddddd"></i>
-                  <i class='fab fa-google-plus-g mx-2' style="color: #dddddd;"></i>
-                  <li id="search" style="list-style-type: none;">
-                    <span class="icon"><i class="fa fa-search mx-2" style="color: #ff1493;"></i></span>
-                    <input type="search" id="search" placeholder="Search" />
-                </li>
-                </div>
-              </nav>
-        </div>
-        
+  <div class="container-fluid" id="cont1">
+    <div class="container-fluid" id="nav1">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <i class='far fa-compass mx-2' style='font-size:36px; color: #ff1493;'></i>
+        <a class="navbar-brand" href="#">Travelo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="col-sm-12">
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active text-center mb-5" style="color: white;">
-                    <h1 class="display-1" id="ind1">Indonesia</h1>
-                    <h5>Pixel perfect design with awesome contents</h5>
-                    <br>
-                    <button type="button" class="btn btn-outline-info mb-5" id="btn1">Explore Now</button>
-                  </div>
-                  <div class="carousel-item text-center mb-5" style="color: white;">
-                    <h1 class="display-1" id="ind1">Beragam</h1>
-                    <h5>Pixel perfect design with awesome contents</h5>
-                    <br>
-                    <button type="button" class="btn btn-outline-info mb-5" id="btn1">Explore Now</button>
-                  </div>
-                  <div class="carousel-item text-center mb-5" style="color: white;">
-                    <h1 class="display-1" id="ind1">Budaya</h1>
-                    <h5>Pixel perfect design with awesome contents</h5>
-                    <br>
-                    <button type="button" class="btn btn-outline-info mb-5" id="btn1">Explore Now</button>
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Destination</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Pages
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
               </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Blog
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <i class='fas fa-phone mx-2' style="color: #ff1493;"><b class="mx-2" style="color: black;">10(256)-928
+              256</b></i>
+          <i class='fab fa-instagram mx-2' style='color: #dddddd'></i>
+          <i class='fab fa-linkedin-in mx-2' style='color: #dddddd'></i>
+          <i class='fab fa-facebook-f mx-2' style="color: #dddddd"></i>
+          <i class='fab fa-google-plus-g mx-2' style="color: #dddddd;"></i>
+          <li id="search" style="list-style-type: none;">
+            <span class="icon"><i class="fa fa-search mx-2" style="color: #ff1493;"></i></span>
+            <input type="search" id="search" placeholder="Search" />
+          </li>
+        </div>
+      </nav>
     </div>
-    
+    <div class="col-sm-12">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active text-center mb-5" style="color: white;">
+            <h1 class="display-1" id="ind1">Indonesia</h1>
+            <h5>Pixel perfect design with awesome contents</h5>
+            <br>
+            <button type="button" class="btn btn-outline-info mb-5" id="btn1">Explore Now</button>
+          </div>
+          <div class="carousel-item text-center mb-5" style="color: white;">
+            <h1 class="display-1" id="ind1">Beragam</h1>
+            <h5>Pixel perfect design with awesome contents</h5>
+            <br>
+            <button type="button" class="btn btn-outline-info mb-5" id="btn1">Explore Now</button>
+          </div>
+          <div class="carousel-item text-center mb-5" style="color: white;">
+            <h1 class="display-1" id="ind1">Budaya</h1>
+            <h5>Pixel perfect design with awesome contents</h5>
+            <br>
+            <button type="button" class="btn btn-outline-info mb-5" id="btn1">Explore Now</button>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
 
-    
-      
+    <div class="where">
+      <div class="row" id="cont22">
+        <div class="container">
+          <div class="row" id="frm1">
+            <div class="col-sm-3">
+              <h5 style="color: white;">Where you want to go?</h5>
+            </div>
+
+            <div class="col-sm-9">
+              <form>
+                <div class="row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Where to go?">
+                  </div>
+                  <div class="col">
+                    <select id="inputState" class="form-control">
+                      <option selected>Date</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <select id="inputState" class="form-control">
+                      <option selected>Travel type</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <button type="button" class="btn btn-outline-info"
+                    style="background-color: #ff1493; border: none; color: white;">Search</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
 
-<script src="js/jquery-3.4.1.min.js.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+  <div class="container-fluid">
+    <div class="popular">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3 class="text-center">Popular Destination</h3>
+          <p class="text-muted text-center">Suffered alteration in some form, by rejected humour or good day<br>
+            randomised booth anim 8-bit hella wolf moon bear words.</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="image-popular">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-4" id="pop1">
+            <div class="card bg-dark text-white">
+              <img src="img/pop5.jpg" class="card-img img-fluid" alt="...">
+              <div class="card-img-overlay">
+                <br><br><br><br><br><br>
+                <div class="txt">
+                  <h5>Italy</h5><span class="badge badge-pill badge-info">07 Places</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4" id="pop2">
+            <div class="card bg-dark text-white">
+              <img src="img/pop2.jpg" class="card-img img-fluid" alt="...">
+              <div class="card-img-overlay">
+                <br><br><br><br><br><br>
+                <div class="txt">
+                  <h5 class="card-title">Brazil</h5><span class="badge badge-pill badge-info">03 Places</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4" id="pop3">
+            <div class="card bg-dark text-white">
+              <img src="img/pop7.jpg" class="card-img img-fluid" alt="...">
+              <div class="card-img-overlay">
+                <br><br><br><br><br><br>
+                <div class="txt">
+                  <h5 class="card-title">America</h5><span class="badge badge-pill badge-info">10 Places</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4" id="pop4">
+            <div class="card bg-dark text-white">
+              <img src="img/pop9.jpg" class="card-img img-fluid" alt="...">
+              <div class="card-img-overlay">
+                <br><br><br><br><br><br>
+                <div class="txt">
+                  <h5>Nepal</h5><span class="badge badge-pill badge-info">02 Places</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4" id="pop5">
+            <div class="card bg-dark text-white">
+              <img src="img/pop14.jpg" class="card-img img-fluid" alt="...">
+              <div class="card-img-overlay">
+                <br><br><br><br><br><br>
+                <div class="txt">
+                  <h5>Maldives</h5><span class="badge badge-pill badge-info">02 Places</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4" id="pop6">
+            <div class="card bg-dark text-white">
+              <img src="img/pop18.jpg" class="card-img img-fluid" alt="...">
+              <div class="card-img-overlay">
+                <br><br><br><br><br><br>
+                <div class="txt">
+                  <h5>Indonesia</h5><span class="badge badge-pill badge-info">05 Places</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="subscribe">
+      <div class="row" id="subs1">
+        <div class="container">
+          <div class="row" id="subsc1">
+            <div class="col-sm-6">
+              <h5 style="color: white;">Subscribe Our Newsletter</h5>
+              <p class="text-muted">Subscribe newsletter to get offers and about new<br>
+                places to discover.</p>
+            </div>
+
+            <div class="col-sm-6">
+              <form class="form-inline">
+                <div class="form-group mx-sm-3 mb-2">
+                  <input type="email" class="form-control" id="inputemail" style="width: 25rem;"
+                    placeholder="Your Mail">
+                </div>
+                <button type="submit" class="btn btn-danger mb-2">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="container-fluid">
+    <div class="places">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3 class="text-center">Popular Places</h3>
+          <p class="text-muted text-center">Suffered alteration in some form, by rejected humour or good day<br>
+            randomised booth anim 8-bit hella wolf moon bear words.</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="image-popular">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="img/des1.jpg" class="img-thumbnail">
+            <h3>Kutai Bridge</a></h3>
+            <p class="float-left text-muted">Indonesia</p>
+            <br>
+            <p>
+              <li class="text-muted" style="list-style-type: none;">
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                (20 Review)
+                <p class="float-right text-muted" style="margin-top: 0%"><i class='far fa-clock mx-2'></i>5 Days</p>
+              </li>
+            </p>
+          </div>
+
+          <div class="col-sm-4">
+            <img src="img/subs15.jpg" class="img-thumbnail">
+            <h3>Raja Ampat</a></h3>
+            <p class="float-left text-muted">Indonesia</p>
+            <br>
+            <p>
+              <li class="text-muted" style="list-style-type: none;">
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                (20 Review)
+                <p class="float-right text-muted" style="margin-top: 0%"><i class='far fa-clock mx-2'></i>5 Days</p>
+              </li>
+            </p>
+          </div>
+
+          <div class="col-sm-4">
+            <img src="img/subs6.jpg" class="img-thumbnail">
+            <h3>Gede Bridge</a></h3>
+            <p class="float-left text-muted">Indonesia</p>
+            <br>
+            <p>
+              <li class="text-muted" style="list-style-type: none;">
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                <i class="fa fa-star" style="color: gold;"></i>
+                (20 Review)
+                <p class="float-right text-muted" style="margin-top: 0%"><i class='far fa-clock mx-2'></i>5 Days</p>
+              </li>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="img/subs11.jpg" class="img-thumbnail">
+          <h3>Kuta Beach</a></h3>
+          <p class="float-left text-muted">Indonesia</p>
+          <br>
+          <p>
+            <li class="text-muted" style="list-style-type: none;">
+              <i class="fa fa-star" style="color: gold;"></i>
+              <i class="fa fa-star" style="color: gold;"></i>
+              <i class="fa fa-star" style="color: gold;"></i>
+              <i class="fa fa-star" style="color: gold;"></i>
+              <i class="fa fa-star" style="color: gold;"></i>
+              (20 Review)
+              <p class="float-right text-muted" style="margin-top: 0%"><i class='far fa-clock mx-2'></i>5 Days</p>
+            </li>
+          </p>
+        </div>
+
+        <div class="col-sm-4">
+          <img src="img/subs10.jpg" class="img-thumbnail">
+          <h3>Anyer Beach</a></h3>
+          <p class="float-left text-muted">Indonesia</p>
+          <br>
+          <p>
+            <li class="text-muted" style="list-style-type: none;">
+              <i class="fa fa-star" style="color: gold;"></i>
+              <i class="fa fa-star" style="color: gold;"></i>
+              <i class="fa fa-star" style="color: gold;"></i>
+              <i class="fa fa-star" style="color: gold;"></i>
+              <i class="fa fa-star" style="color: gold;"></i>
+              (20 Review)
+              <p class="float-right text-muted" style="margin-top: 0%"><i class='far fa-clock mx-2'></i>5 Days</p>
+            </li>
+          </p>
+        </div>
+
+        <div class="col-sm-4">
+          <img src="img/subs12.jpg" class="img-thumbnail">
+          <h3>Pangrango Bridge</a></h3>
+          <p class="float-left text-muted">Indonesia</p>
+          <br>
+          <p>
+            <li class="text-muted" style="list-style-type: none;">
+              <i class="fa fa-star" style="color: gold;"></i>
+              <i class="fa fa-star" style="color: gold;"></i>
+              <i class="fa fa-star" style="color: gold;"></i>
+              <i class="fa fa-star" style="color: gold;"></i>
+              <i class="fa fa-star" style="color: gold;"></i>
+              (20 Review)
+              <p class="float-right text-muted" style="margin-top: 0%"><i class='far fa-clock mx-2'></i>5 Days</p>
+            </li>
+          </p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row text-center">
+      <div class="col-sm-12">
+        <button type="button" class="btn btn-danger btn-lg">More Places</button>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+  </div>
+
+
+  <div class="enjoy" id="enjoy11">
+    <div class="container-fluid text-center">
+      <br><br><br><br>
+      <h1 class="display-1" id="enjoy1" style="color: white;">Enjoy Video</h1>
+      <i class='far fa-play-circle' style='font-size:48px;color: #2fe1aa'></i>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <i class='fas fa-subway' style='font-size:48px;color:#ff1493'></i>
+        <br>
+        <br>
+        <h6>Comfortable Journey</h6>
+        <p class="text-muted">A wonderful serenity has taken to the<br>
+          possession of my entire</p>
+      </div>
+
+      <div class="col-sm-4">
+        <i class='fas fa-hotel' style='font-size:48px;color:#ff1493'></i>
+        <br>
+        <br>
+        <h6>Luxuries Hotel</h6>
+        <p class="text-muted">A wonderful serenity has taken to the<br>
+          possession of my entire</p>
+      </div>
+
+      <div class="col-sm-4">
+        <i class='fas fa-globe-americas' style='font-size:48px;color:#ff1493'></i>
+        <br>
+        <br>
+        <h6>Travel Guide</h6>
+        <p class="text-muted">A wonderful serenity has taken to the<br>
+          possession of my entire</p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="jumbotron text-center" id="jumbo1">
+            <img src="img/mawar2.jpg" class="img rounded-circle" style="width: 150px; height: 150px;">
+            <br>
+            <br>
+            <p>"Working in conjunction with humanitarian aid agencies, we have supported<br>
+              programmes to help alleviate human suffering."</p>
+            <p class="text-muted">- Mawar De Jongh</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="jumbotron text-center" id="jumbo1">
+            <img src="img/chelsea1.jpg" class="img rounded-circle" style="width: 150px; height: 150px;">
+            <br>
+            <br>
+            <p>"Working in conjunction with humanitarian aid agencies, we have supported<br>
+              programmes to help alleviate human suffering."</p>
+            <p class="text-muted">- Chelsea Islan</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="jumbotron text-center" id="jumbo1">
+            <img src="img/maudy1.jpg" class="img rounded-circle" style="width: 150px; height: 150px;">
+            <br>
+            <br>
+            <p>"Working in conjunction with humanitarian aid agencies, we have supported<br>
+              programmes to help alleviate human suffering."</p>
+            <p class="text-muted">- Maudy Ayunda</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="recent">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3 class="text-center">Recent Trips</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="img/recent17.jpg" class="img-fluid">
+        <br>
+        <br>
+        <p class="text-muted">Oct 12, 2019</p>
+        <h5>Journey Are Best Measured In<br> New Friends</h5>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="img/recent18.jpg" class="img-fluid">
+        <br>
+        <br>
+        <p class="text-muted">Oct 12, 2019</p>
+        <h5>Journey Are Best Measured In<br> New Friends</h5>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="img/recent29.jpg" class="img-fluid">
+        <br>
+        <br>
+        <p class="text-muted">Oct 12, 2019</p>
+        <h5>Journey Are Best Measured In<br> New Friends</h5>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <div class="container-fluid" style="background-color: midnightblue" id="foot1">
+    <div class="row">
+      <div class="col-sm-3"><br><br>
+        <i class='far fa-compass mx-2' id="comps1"> Travelo</i>
+        <br>
+        <br>
+        <br>
+        <div class="flora" style="color: grey;">
+          <p>5th Flora, 700/D kings road,</p>
+          <p>lane New York-1782</p>
+          <p>+6221 1234 456 789</p>
+          <p>contact@carpenter.com</p>
+          <p><i class='fab fa-facebook-f mx-2'></i> <i class='fab fa-twitter mx-2'></i> <i
+          class='fab fa-instagram mx-2'></i>
+          <i class='fab fa-pinterest mx-2'></i> <i class='fab fa-youtube mx-2'></i> </p>
+        </div>
+      </div>
+      <div class="col-sm-3"><br><br>
+        <h5 style="color: white">Company</h5><br><br>
+        <p style="color: grey">Pricing</p>
+        <p style="color: grey">About</p>
+        <p style="color: grey">Gallery</p>
+        <p style="color: grey">contact</p>
+      </div>
+      <div class="col-sm-3"><br><br>
+        <h5 style="color: white">Popular Destination</h5><br><br>
+        <div class="row">
+          <div class="col-sm-6" style="color: grey">
+            <p>Indonesia</p>
+            <p>India</p>
+            <p>Italy</p>
+            <p>French</p>
+          </div>
+          <div class="col-sm-6" style="color: grey">
+            <p>America</p>
+            <p>Switzerland</p>
+            <p>Canada</p>
+            <p>England</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3"><br><br>
+        <h5 style="color: white">Instagram</h5><br><br>
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="img/enjoy1.jpg" class="img-fluid" alt="Responsive image">
+          </div>
+          <div class="col-sm-4">
+            <img src="img/indo2.jpg" class="img-fluid" alt="Responsive image">
+          </div>
+          <div class="col-sm-4">
+            <img src="img/indo4.JPG" class="img-fluid" alt="Responsive image">
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="img/recent5.jpg" class="img-fluid" alt="Responsive image">
+          </div>
+          <div class="col-sm-4">
+            <img src="img/pop8.jpg" class="img-fluid" alt="Responsive image">
+          </div>
+          <div class="col-sm-4">
+            <img src="img/pop16.jpg" class="img-fluid" alt="Responsive image">
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="footer text-center">
+      <p style="color: grey">Copyright &copy2020 All Rights Reserved | This template is made with <i
+        class='far fa-heart'></i> by <p style="color: #ff1493;">Colorlib</p>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="js/jquery-3.4.1.min.js.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>

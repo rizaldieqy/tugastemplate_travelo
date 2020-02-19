@@ -6,13 +6,11 @@ body {
     font-family: 'Caveat', cursive;
 }
 
-#nav1 {
-    background: whitesmoke;
-}
 
 #cont1 {
     background: url(img/indo1.jpg);
-    height: 400px;
+    margin-top: -30px;
+    height: 500px;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -21,8 +19,71 @@ body {
     margin-top: 75px;
 }
 
+.carousel-item {
+    margin-top: 100px;
+}
+
 #btn1 {
     background-color: #2fe1aa;
     border: none;
     color: white;
+}
+
+#cont2 {
+    background: darkblue;
+}
+
+#cont22 {
+    background-color: #161c6f;
+    height: 100px;
+}
+
+#frm1 {
+    margin-top: 30px;
+}
+
+/* .card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+} */
+
+.txt {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#subs1 {
+    background: #161c6f;
+}
+
+#subsc1 {
+    margin-top: 40px;
+}
+
+#enjoy1 {
+    font-family: 'Caveat', cursive;
+    margin-top: 100px;
+}
+
+.enjoy {
+    background: url(img/enjoy2.jpg);
+    margin-top: -30px;
+    height: 500px;
+    background-repeat: none;
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+}
+
+#jumbo1 {
+    background-color: transparent;
+}
+
+
+#foot1 {
+    height: 500px;
+    margin-bottom: -80px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#comps1 {
+    font-size:36px; 
+    color: #ff1493;
 }
